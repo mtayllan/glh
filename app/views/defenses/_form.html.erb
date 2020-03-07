@@ -1,0 +1,22 @@
+<%= form_with(model: defense, local: true) do |form| %>
+  <% if defense.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(defense.errors.count, "error") %> prohibited this defense from being saved:</h2>
+
+      <ul>
+      <% defense.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :proceeding_id %>
+    <%= form.text_field :proceeding_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
