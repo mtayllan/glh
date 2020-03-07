@@ -3,7 +3,7 @@ class CreateProceedings < ActiveRecord::Migration[5.2]
     create_table :proceedings do |t|
       t.references :patient, foreign_key: true
       t.references :medication, foreign_key: true
-
+      t.string :number
       t.timestamps
     end
   end

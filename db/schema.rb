@@ -90,6 +90,7 @@ ActiveRecord::Schema.define(version: 2020_03_07_232551) do
   create_table "proceedings", force: :cascade do |t|
     t.bigint "patient_id"
     t.bigint "medication_id"
+    t.string "number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["medication_id"], name: "index_proceedings_on_medication_id"
