@@ -1,29 +1,30 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <h1>Processos</h1>
+  <p id="notice"><%= notice %></p>
+  <div class="row">
+    <%= link_to 'Novo Processo', new_proceeding_path, class: 'btn btn-primary' %>
+    <div class="table-responsive">
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Paciente</th>
+            <th>Medicamento</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
 
-<h1>Proceedings</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Patient</th>
-      <th>Medication</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @proceedings.each do |proceeding| %>
-      <tr>
-        <td><%= proceeding.patient %></td>
-        <td><%= proceeding.medication %></td>
-        <td><%= link_to 'Ver', proceeding %></td>
-        <td><%= link_to 'Editar', edit_proceeding_path(proceeding) %></td>
-        <td><%= link_to 'Excluir', proceeding, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Proceeding', new_proceeding_path %>
+        <tbody>
+          <% @proceedings.each do |proceeding| %>
+          <tr>
+            <td><%= proceeding.patient %></td>
+            <td><%= proceeding.medication %></td>
+            <td><%= link_to 'Ver', proceeding %></td>
+            <td><%= link_to 'Editar', edit_proceeding_path(proceeding) %></td>
+            <td><%= link_to 'Excluir', proceeding, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
