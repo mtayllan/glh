@@ -13,12 +13,16 @@
       Remédios
     <% end %>
     <%= link_to proceedings_path, class: "nav-link" do %>
-      <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+      <div class="sb-nav-link-icon"><i class="fas fa-file-medical-alt"></i></div>
       Processos
     <% end %>
     <%= link_to defenses_path, class: "nav-link" do %>
-      <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+      <div class="sb-nav-link-icon"><i class="fas fa-file-import"></i></div>
       Defesas
+    <% end %>
+    <%= link_to destroy_user_session_path, class: "nav-link", method: :delete do %>
+      <div class="sb-nav-link-icon"><i class="fas fa-sign-out-alt"></i></div>
+      Sair
     <% end %>
   </div>
 </div>
