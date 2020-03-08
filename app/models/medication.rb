@@ -4,5 +4,5 @@ class Medication < ApplicationRecord
 
   has_many :proceedings, dependent: :restrict_with_error
 
-  enum situation: { 'T1': 0, 'T2': 1, 'T3': 2 }
+  enum situation: { 'Falha Administrativa': 0, 'Fora do protocolo': 1, 'Off Label': 2 }
 end
