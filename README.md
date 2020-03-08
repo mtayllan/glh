@@ -1,24 +1,6 @@
-# README
+# Fluxo - Política Inteligente
+![demo](https://i.imgur.com/ouu3GVk.gif)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Procuradoria Geral do Estado de Ceará recebe uma grande quantidade ações que solicitam medicamentos já disponibilizados no SUS, isso gera um grande acúmulo de processos judiciais pela demora para análise e composição de respostas.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Nossa solução busca agilizar o trabalho da Procuradoria, automatizando o processo de analisar a disponibilidade e compatibilidade de remédios do SUS, além de gerar documentos prontos para resposta.
