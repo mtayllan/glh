@@ -10,6 +10,7 @@
             <th>Nome</th>
             <th>Concentração/Composição</th>
             <th>Forma farmacêutica/Descrição</th>
+            <th>Grupo</th>
             <th></th>
             <th></th>
             <th></th>
@@ -22,6 +23,7 @@
               <td><%= medicine.name %></td>
               <td style="white-space: pre"><%= medicine.composition.join("\n") %></td>
               <td style="white-space: pre"><%= medicine.description.join("\n") %></td>
+              <td><%= medicine.group %></td>
               <td><%= link_to 'Ver', medicine %></td>
               <td><%= link_to 'Editar', edit_medicine_path(medicine) %></td>
               <td><%= link_to 'Excluir', medicine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
