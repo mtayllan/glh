@@ -15,7 +15,8 @@
 //= require bootstrap/dist/js/bootstrap.min
 //= require activestorage
 //= require turbolinks
-
+//= require datatables/media/js/jquery.dataTables.min
+//= require datatables.bs
 $(() => {
   // Toggle the side navigation
   $("#sidebarToggle").on("click", function(e) {
@@ -31,4 +32,6 @@ document.addEventListener('turbolinks:load', () => {
           $(this).addClass("active");
       }
   });
+
+  $('table').dataTable();
 });

@@ -16,9 +16,9 @@
       <tr>
         <td><%= proceeding.patient %></td>
         <td><%= proceeding.medication %></td>
-        <td><%= link_to 'Show', proceeding %></td>
-        <td><%= link_to 'Edit', edit_proceeding_path(proceeding) %></td>
-        <td><%= link_to 'Destroy', proceeding, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', proceeding %></td>
+        <td><%= link_to 'Editar', edit_proceeding_path(proceeding) %></td>
+        <td><%= link_to 'Excluir', proceeding, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

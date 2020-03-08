@@ -18,9 +18,9 @@
         <td><%= disease.name %></td>
         <td><%= disease.description %></td>
         <td><%= disease.cid %></td>
-        <td><%= link_to 'Show', disease %></td>
-        <td><%= link_to 'Edit', edit_disease_path(disease) %></td>
-        <td><%= link_to 'Destroy', disease, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', disease %></td>
+        <td><%= link_to 'Editar', edit_disease_path(disease) %></td>
+        <td><%= link_to 'Excluir', disease, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
