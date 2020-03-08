@@ -1,4 +1,4 @@
-class ProceedingsController < ApplicationController
+class ProceedingsController < MainController
   before_action :set_proceeding, only: [:show, :edit, :update, :destroy]
 
   # GET /proceedings

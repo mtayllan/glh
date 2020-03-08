@@ -1,0 +1,21 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+<div class="form-group">
+  <label class="small mb-1" for="inputEmailAddress">Email</label>
+  <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control py-4' %>
+</div>
+<div class="form-group">
+  <label class="small mb-1" for="inputPassword">Senha</label>
+  <%= f.password_field :password, autocomplete: "current-password", class: "form-control py-4" %>
+</div>
+<div class="form-group">
+  <div class="custom-control custom-checkbox">
+    <%= f.check_box :remember_me, class: "custom-control-input", id: "rememberPasswordCheck" %>
+    <label class="custom-control-label" for="rememberPasswordCheck">Lembrar senha</label>
+  </div>
+</div>
+<div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+  <%= f.submit 'Login', class: 'btn btn-primary' %>
+</div>
+</form>
+<% end %>

@@ -1,4 +1,4 @@
-class DefensesController < ApplicationController
+class DefensesController < MainController
   before_action :set_defense, only: [:show, :edit, :update, :destroy]
 
   # GET /defenses

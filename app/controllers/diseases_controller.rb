@@ -1,4 +1,4 @@
-class DiseasesController < ApplicationController
+class DiseasesController < MainController
   before_action :set_disease, only: [:show, :edit, :update, :destroy]
 
   # GET /diseases

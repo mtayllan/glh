@@ -1,4 +1,4 @@
-class PatientsController < ApplicationController
+class PatientsController < MainController
   before_action :set_patient, only: [:show, :edit, :update, :destroy]
 
   # GET /patients

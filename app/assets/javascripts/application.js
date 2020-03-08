@@ -15,5 +15,4 @@
 //= require turbolinks
 //= require jquery
 //= require bootstrap/dist/js/bootstrap.min
-//= require popper.js/dist/popper.min
 //= require_tree .
